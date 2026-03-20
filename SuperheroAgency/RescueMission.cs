@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    internal class RescueMission<T> : Mission<T> where T : IFly, ITech
+    internal class RescueMission<T> : Mission<T>
     {
         public string Location { get; set; }
         public int Reward { get; set; }

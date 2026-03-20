@@ -41,7 +41,13 @@
             strandedCat.HeroesDeployed.Add(reyzhen); // All good
 
             var rich = new Gadgeteer("Rich", "The Developer", 33, Alignment.EVIL);
-            strandedCat.HeroesDeployed.Add(rich); // Should provide a compile time error
+
+            var survey1 = new ReconMission<Gadgeteer>("Leeds", 300); // Should provide an error
+
+            var survey2 = new ReconMission<Mystic>("Manchester", 300);
+
+            survey2.HeroesDeployed.Add(reyzhen); // All good
+            survey2.HeroesDeployed.Add(rich); // Should provide an error
         }
     }
 }

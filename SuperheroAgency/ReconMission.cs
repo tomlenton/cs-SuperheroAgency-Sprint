@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    public class CombatMission<T> : Mission<T>
+    internal class ReconMission<IFly> : Mission<IFly>
     {
         public string Location { get; set; }
         public int Reward { get; set; }
-        public CombatMission(string location, int reward) : base(location, reward)
+        public ReconMission(string location, int reward) : base(location, reward)
         {
             Location = location;
             Reward = reward;
