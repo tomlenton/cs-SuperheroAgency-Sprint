@@ -8,5 +8,18 @@ namespace SuperheroAgency
 {
     internal class Superhero
     {
+        string Alias { get; }
+        string SecretIdentity { get; }
+        int Age { get; }
+        Enum Alignment { get; }
+
+        public Superhero(string alias, string secretIdentity, int age, Enum alignment)
+        {
+            Alias = alias;
+            SecretIdentity = secretIdentity;
+            Age = age;
+            Alignment = alignment;
+        }
     }
 }
+

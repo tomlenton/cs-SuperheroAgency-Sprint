@@ -8,5 +8,11 @@ namespace SuperheroAgency
 {
     internal interface ITelepathy
     {
+        int PowerLevel { get; set; }
+
+        public void ReadMind(string alias)
+        {
+            Console.WriteLine($"{alias} is reading your thoughts");
+        }
     }
 }

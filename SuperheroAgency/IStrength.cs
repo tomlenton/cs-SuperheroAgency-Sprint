@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    internal interface Interface1
+    internal interface IStrength
     {
+        int StrengthLevel { get; set; }
+        public void Lift(string alias)
+        {
+            Console.WriteLine($"{alias} lifts with all their might");
+        }
     }
 }

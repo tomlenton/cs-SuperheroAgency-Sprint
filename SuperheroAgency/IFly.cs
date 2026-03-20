@@ -8,5 +8,12 @@ namespace SuperheroAgency
 {
     internal interface IFly
     {
+        double FlightSpeed { get; set; }
+        double MaxHeight { get; set; }
+
+        public void Fly(string alias)
+        {
+            Console.WriteLine($"{alias} swoops by look at them go!");
+        }
     }
 }

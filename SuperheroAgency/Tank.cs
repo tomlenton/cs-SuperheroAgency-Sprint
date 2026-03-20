@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    internal class Tank
+    internal class Tank: Superhero, IFly, IStrength
     {
+        public int StrengthLevel { get; set; }
+        public double FlightSpeed { get; set; }
+        public double MaxHeight { get; set; }
+
+
+        public Tank(string alias, string secretIdentity, int age, Enum alignment, int strengthLevel, double flightSpeed, double maxHeight) 
+            : base(alias, secretIdentity, age, alignment )
+        {
+            StrengthLevel = strengthLevel;
+            FlightSpeed = flightSpeed;
+            MaxHeight = maxHeight;
+
+
+        }
     }
 }

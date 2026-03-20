@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    internal class CombatMission
+    internal class CombatMission : Mission<T> 
+        where T : ICombat
     {
     }
 }
