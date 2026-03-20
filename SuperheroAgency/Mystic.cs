@@ -14,16 +14,16 @@ namespace SuperheroAgency
 
 
 
-        public Mystic(string alias, string secretIdentity, int age, Enum alignment, double flightSpeed, double maxHeight, int powerLevel)
+        public Mystic(string alias, string secretIdentity, int age, Enum alignment)
             : base(alias, secretIdentity, age, alignment)
         {
-            FlightSpeed = flightSpeed;
-            MaxHeight = maxHeight;
-            PowerLevel = powerLevel;
+            //FlightSpeed = flightSpeed;
+            //MaxHeight = maxHeight;
+            //PowerLevel = powerLevel;
 
 
         }
     }
 
 }
-}
+

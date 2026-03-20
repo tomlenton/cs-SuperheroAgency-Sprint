@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    internal interface IStrength
+    public interface IStrength
     {
         int StrengthLevel { get; set; }
         public void Lift(string alias)

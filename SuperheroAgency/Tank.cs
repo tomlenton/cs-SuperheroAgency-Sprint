@@ -13,12 +13,12 @@ namespace SuperheroAgency
         public double MaxHeight { get; set; }
 
 
-        public Tank(string alias, string secretIdentity, int age, Enum alignment, int strengthLevel, double flightSpeed, double maxHeight) 
+        public Tank(string alias, string secretIdentity, int age, Enum alignment) 
             : base(alias, secretIdentity, age, alignment )
         {
-            StrengthLevel = strengthLevel;
-            FlightSpeed = flightSpeed;
-            MaxHeight = maxHeight;
+            //StrengthLevel = strengthLevel;
+            //FlightSpeed = flightSpeed;
+            //MaxHeight = maxHeight;
 
 
         }

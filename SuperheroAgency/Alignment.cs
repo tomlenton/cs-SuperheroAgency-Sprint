@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SuperheroAgency
 {
-    internal class Alignment
+    internal enum Alignment
     {
+        GOOD,
+        EVIL
     }
 }
