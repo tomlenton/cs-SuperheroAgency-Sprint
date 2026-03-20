@@ -11,9 +11,28 @@
             Console.WriteLine(GetLast(doubleArray)); // 6.1111
 
             string[] stringArray = { "hello", "world", "it's", "northcoders!" };
-            Console.WriteLine(GetLast(stringArray)); // "northcoders"
+            Console.WriteLine(GetLast(stringArray)); // "northcoders!"
+
+            Stack<string> stack = new Stack<string>();
+            stack.Push("The Perfume");
+            stack.Push("Death and the Penguin");
+            stack.Push("Dune");
+            stack.Pop();
+            Console.WriteLine($"Number of elements: {stack.Count}");
+            foreach (string book in stack)
+            {
+                Console.WriteLine(book);
+            }
+            var myBooks = new CustomStack<string>();
+
+            myBooks.Push("Book 1");
+            myBooks.Push("Book 2");
+            myBooks.Push("Book 3");
+
+            Console.WriteLine(myBooks.Pop()); // Book 3
+
         }
-        public static T GetLast<T>(T[] array) => array[array.Length - 1];
+        public static T GetLast<T>(T[] array) => array[array.Length - 1]; 
 
     }
 }
